@@ -1,10 +1,20 @@
-//  🛠️ Todo 1: ให้สร้าง ProductCard Component แล้วนำไป Render ในไฟล์ `ProductHighlight.jsx`
-//  แทนที่ Product Card 1, Product Card 2 และ Product Card 3
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 
-function ProductCard() {
+function ProductCard(props) {
   return (
     <div className="bg-white p-4 shadow-md">
+      {/* 🛠️ Todo 1 / Step 1: ให้เปลี่ยน Value ของ `src` เป็นข้อมูลส่งเข้ามาใน Component ผ่าน Prop ที่ชื่อว่า `imgSrc`
+          โดยเราสามารถ Access `imgSrc` ผ่าน Object `props` ที่เป็น Parameter ของ Component
+          
+          ==== ตัวอย่าง ====
+
+           <img
+            src={props.imgSrc}
+            alt="The Lorem Ipsum for photos."
+            className="w-full mb-2"
+          />
+          
+      */}
       <img
         src="https://picsum.photos/id/231/200/200"
         alt="The Lorem Ipsum for photos."
