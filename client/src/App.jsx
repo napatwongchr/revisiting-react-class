@@ -9,10 +9,23 @@ import {
   VideoCameraIcon,
 } from "@heroicons/react/24/solid";
 
+// 🛠️ Todo 1 / Step 3: ให้ Import ตัว Component Navbar เพื่อจะนำไป Render ลงใน Component App ด้านล่าง
+
+//     ==== ตัวอย่าง ====
+
+//     import Navbar from "./components/Navbar.jsx"
+
 function App() {
   return (
     <>
-      {/* 🛠️ Todo 1: ให้สร้าง Component Navbar แล้วนำมา Render */}
+      {/* 
+        Todo 1 / Step 4: ลบ HTML Element ที่แสดง <nav> ออกจาก App.jsx (ตั้งแต่บรรทัดที่ 29 - 61)
+        แล้วนำ Component Navbar ที่ Import มา Render แทน
+
+        ==== ตัวอย่าง ====
+
+        <Navbar />
+      */}
       <nav className="bg-gray-800 p-4">
         <div className="container mx-auto flex justify-between items-center">
           <a href="#" className="text-white text-xl font-semibold">
