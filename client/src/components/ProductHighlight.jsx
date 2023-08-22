@@ -6,6 +6,7 @@ function ProductHighlight() {
       <div className="container mx-auto">
         <h2 className="text-2xl font-semibold mb-4">Featured Products</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {/* Product Card 1 */}
           <div className="bg-white p-4 shadow-md">
             <img
               src="https://picsum.photos/id/231/200/200"
@@ -23,6 +24,7 @@ function ProductHighlight() {
               </button>
             </div>
           </div>
+          {/* Product Card 2 */}
           <div className="bg-white p-4 shadow-md">
             <img
               src="https://picsum.photos/id/232/200/200"
@@ -40,6 +42,7 @@ function ProductHighlight() {
               </button>
             </div>
           </div>
+          {/* Product Card 3 */}
           <div className="bg-white p-4 shadow-md">
             <img
               src="https://picsum.photos/200/200"
