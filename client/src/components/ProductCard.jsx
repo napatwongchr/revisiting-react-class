@@ -16,7 +16,7 @@ function ProductCard(props) {
           
       */}
       <img
-        src="https://picsum.photos/id/231/200/200"
+        src={props.imgSrc}
         alt="The Lorem Ipsum for photos."
         className="w-full mb-2"
       />
