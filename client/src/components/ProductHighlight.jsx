@@ -1,31 +1,27 @@
 import ProductCard from "./ProductCard";
-import axios from "axios";
-import { useState, useEffect } from "react";
 
-function ProductHighlight() {
-  const [products, setProducts] = useState([]);
+// Todo 5: ให้ Import ตัว ProductContext จากไฟล์ App.jsx
+// และ Import ตัว Consumer จาก Package "react"
+// เช่น
+// import { ProductContext } from "../App";
+// import { useContext } from "react";
 
-  const getProducts = async () => {
-    const productDataFromServer = await axios.get(
-      "http://localhost:4000/products"
-    );
-    setProducts(productDataFromServer.data);
-  };
-
-  const totalProductNumber = products.length;
-
-  useEffect(() => {
-    getProducts();
-  }, []);
+// Todo 6: ลบ Parameter `props`
+function ProductHighlight(props) {
+  // Todo 7: Consume ตัว ProductContext ด้วย Function useContext
+  // เช่น
+  // const contextData = useContext(ProductContext)
 
   return (
     <section className="bg-gray-200 py-8">
       <div className="container mx-auto">
         <h2 className="text-2xl font-semibold mb-4">
-          Featured Products (Total is {totalProductNumber})
+          {/* Todo 8: ให้ Access ตัว `totalProductNumber` จาก ProductContext */}
+          Featured Products (Total is {props.totalProductNumber})
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {products.map((item) => {
+          {/* Todo 9: ให้ Access ตัว `products` จาก ProductContext */}
+          {props.products.map((item) => {
             return (
               <ProductCard
                 key={item.id}
