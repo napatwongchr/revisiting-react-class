@@ -1,10 +1,12 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
 
 import Navbar from "./components/Navbar";
 import ProductCategory from "./components/ProductCategory";
 import ProductHighlight from "./components/ProductHighlight";
 import Footer from "./components/Footer";
+
+export const ProductContext = createContext({});
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -24,13 +26,18 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <ProductHighlight
-        products={products}
-        totalProductNumber={totalProductNumber}
-      />
-      <ProductCategory />
-      <Footer totalProductNumber={totalProductNumber} />
+      <ProductContext.Provider
+        value={{
+          products,
+          getProducts,
+          totalProductNumber,
+        }}
+      >
+        <Navbar />
+        <ProductHighlight />
+        <ProductCategory />
+        <Footer />
+      </ProductContext.Provider>
     </>
   );
 }
