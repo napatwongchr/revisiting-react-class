@@ -1,5 +1,6 @@
 export const products = [
   {
+    id: 1,
     name: "Premium Bluetooth Headphones",
     category: "Electronics",
     description:
@@ -19,6 +20,7 @@ export const products = [
     },
   },
   {
+    id: 2,
     name: "Classic Leather Watch",
     category: "Fashion",
     description:
@@ -37,6 +39,7 @@ export const products = [
     },
   },
   {
+    id: 3,
     name: "Organic Green Tea",
     category: "Food & Beverage",
     description:
@@ -55,6 +58,7 @@ export const products = [
     },
   },
   {
+    id: 4,
     name: "Smart Home Security System",
     category: "Home & Garden",
     description:
@@ -73,6 +77,7 @@ export const products = [
     },
   },
   {
+    id: 5,
     name: "Fitness Tracker Watch",
     category: "Sports & Fitness",
     description:
@@ -91,6 +96,7 @@ export const products = [
     },
   },
   {
+    id: 6,
     name: "Portable Bluetooth Speaker",
     category: "Electronics",
     description:
@@ -109,6 +115,7 @@ export const products = [
     },
   },
   {
+    id: 7,
     name: "Premium Leather Wallet",
     category: "Fashion",
     description:
@@ -127,6 +134,7 @@ export const products = [
     },
   },
   {
+    id: 8,
     name: "Natural Soy Candle Set",
     category: "Home & Garden",
     description:
