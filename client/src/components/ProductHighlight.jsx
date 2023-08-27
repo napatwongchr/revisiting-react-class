@@ -12,6 +12,8 @@ function ProductHighlight() {
     setProducts(productDataFromServer.data);
   };
 
+  const totalProductNumber = products.length;
+
   useEffect(() => {
     getProducts();
   }, []);
@@ -19,7 +21,9 @@ function ProductHighlight() {
   return (
     <section className="bg-gray-200 py-8">
       <div className="container mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Featured Products</h2>
+        <h2 className="text-2xl font-semibold mb-4">
+          Featured Products (Total is {totalProductNumber})
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {products.map((item) => {
             return (
