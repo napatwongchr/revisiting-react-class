@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import { products } from "./data/products.js";
 import cors from "cors";
 
